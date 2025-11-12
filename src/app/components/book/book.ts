@@ -15,6 +15,4 @@ export class Book {
     author: "Kauã Cardoso",
     price: 50.00
   };
-
-
 }
