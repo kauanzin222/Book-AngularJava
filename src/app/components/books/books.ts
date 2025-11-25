@@ -9,7 +9,9 @@ import { BookInterface } from '../../BookInterface';
 })
 export class Books {
 
-  newBook: BookInterface = {} as BookInterface;
+  book: BookInterface = {} as BookInterface;
+  isUpdate: boolean = false;
+  idCount: number = 4;
 
   books: BookInterface[] = [
     {
@@ -33,8 +35,29 @@ export class Books {
   ];
 
   saveBook() {
-    this.newBook.id = this.books.length + 1;
-    this.books.push(this.newBook);
-    this.newBook = {} as BookInterface;
+    // Se não for Update, faça
+    if (!this.isUpdate) {
+      this.book.id = this.idCount;
+      this.idCount++;
+      this.books.push(this.book);
+    }
+
+    this.book = {} as BookInterface;
+    this.isUpdate = false;
+  }
+
+  removeBook(selectedBook: BookInterface) {
+    this.books = this.books.filter(book => book != selectedBook);
+
+    /*console.log("id: %d", selectedBook.id);
+    console.log('Removing the "%s" book', selectedBook.title);*/
+  }
+
+  updateBook(selectedBook: BookInterface) {
+    this.book = selectedBook;
+    this.isUpdate = true;
+
+    /*console.log("id: %d", selectedBook.id);
+    console.log('Updating the "%s" book', selectedBook.title);*/
   }
 }
