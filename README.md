@@ -1,6 +1,6 @@
 # Modulo8Book
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+This project was created solely for learning purposes, marking my first interaction with Angular. It was a journey to explore some basic concepts and understand how things work! This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
 
 ## Development server
 
