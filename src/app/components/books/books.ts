@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { BookInterface } from '../../BookInterface';
-import { title } from 'process';
 
 @Component({
   selector: 'app-books',
@@ -10,7 +9,9 @@ import { title } from 'process';
 })
 export class Books {
 
-  books : BookInterface[] = [
+  newBook: BookInterface = {} as BookInterface;
+
+  books: BookInterface[] = [
     {
       id: 1,
       title: "Java 24 horas",
@@ -29,5 +30,11 @@ export class Books {
       author: "Kauã Cardoso",
       price: 43.25
     }
-  ]
+  ];
+
+  saveBook() {
+    this.newBook.id = this.books.length + 1;
+    this.books.push(this.newBook);
+    this.newBook = {} as BookInterface;
+  }
 }

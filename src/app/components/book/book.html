@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container mt-4">
     <h3>Cadastro</h3>
 
-    <form action="">
+    <form #formBook="ngForm">
         <div class="row">
             <div class="mb-3 col-lg-6">
-                <label for="title" class="form-label">Título:</label>
+                <label for="title" class="form-label">Título:</label> <!--Two data biding-->
                 <input type="text" class="form-control" [(ngModel)]="book.title" id="title" name="title" required>
             </div>
             <div class="mb-3 col-lg-6">
@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <div>
-                <button class="btn btn-primary">Salvar</button>
+                <button class="btn btn-primary" (click)="save()" [disabled]="formBook.invalid">Salvar</button>
             </div>
         </div>
     </form>
