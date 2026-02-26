@@ -1,59 +1,22 @@
-# Modulo8Book
+# 📚 Gerenciamento de Livros - Primeiros Passos no Angular
 
-This project was created solely for learning purposes, marking my first interaction with Angular. It was a journey to explore some basic concepts and understand how things work! This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+![Status](https://img.shields.io/badge/Status-Finalizado-green)
 
-## Development server
+Este repositório marca o meu início no ecossistema **Angular**. Ele foi desenvolvido para consolidar o "básico do básico", funcionando como minha primeira interação prática com o framework e seus conceitos fundamentais de arquitetura.
 
-To start a local development server, run:
+## 🚀 Principais Aprendizados
 
-```bash
-ng serve
-```
+Neste projeto inicial, foquei em entender como o Angular organiza a aplicação e como os dados fluem entre as partes do sistema:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- 🧩 **Componentização (Pai & Filho)**: Aprendi a dividir a interface em componentes menores e como estruturar a hierarquia entre um componente pai e seus dependentes.
+- 📤 **Comunicação entre Componentes**: Pratiquei a passagem de dados de um componente para outro, entendendo o fluxo de informação dentro da aplicação.
+- 🎨 **Estilização com Bootstrap**: Utilizei o **Bootstrap** como padrão para garantir que, desde os primeiros projetos, a interface fosse responsiva e visualmente organizada.
+- ⚙️ **Fundamentos do Framework**: Primeira experiência com a CLI do Angular, estrutura de pastas e o ciclo de vida básico de um projeto.
 
-## Code scaffolding
+## 🛠️ Tecnologias Utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Framework**: Angular
+- **Linguagem**: TypeScript
+- **Design/UI**: Bootstrap
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+_Projeto desenvolvido para fins de estudo e introdução ao desenvolvimento web com Angular. 📚_
